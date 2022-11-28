@@ -59,7 +59,7 @@
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
         <div class="nav__btns">
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -85,7 +85,7 @@
               </a>
             </div>
             <div class="home__img">
-              <svg
+              <!-- <svg
                 class="home__blob"
                 viewBox="0 0 200 187"
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,21 @@
                     xlink:href="/assets/img/about.png"
                   />
                 </g>
-              </svg>
+              </svg> -->
+              <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0" mask-type="alpha">
+                    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                </mask>
+                <g mask="url(#mask0)">
+                    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    <image
+                    class="home__blob-img"
+                    x="2"
+                    y="-20"
+                    xlink:href="/assets/img/about.jpg"
+                  />
+                </g>
+            </svg>
             </div>
             <div class="home__data">
               <h1 class="home__title">Hi, I'm Sujal Lakhani</h1>
@@ -143,38 +157,7 @@
         <span class="section__subtitle">My introduction</span>
 
         <div class="about__container container grid">
-          <!-- <div class="home__img about__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home__blob-img"
-                    x="12"
-                    y="18"
-                    xlink:href="/assets/img/about.png"
-                  />
-                </g>
-              </svg>
-            </div> -->
-            <img src="./assets/img/about.jpg" alt="" class="about__img">
+            <img src="./assets/img/wallpaper1.jpg" alt="" class="about__img">
           <div class="about__data">
             <p class="about__description">
               I have keen interest in problem solving and software development
@@ -559,7 +542,19 @@
         <div class="projects__container container swiper-container">
           <div class="swiper-wrapper">
             <div class="projects__content grid swiper-slide">
-              <img src="/assets/img/portfolio1.jpg" alt="" class="projects__img">
+              <img src="/assets/img/project_1.png" alt="" class="projects__img">
+              <div class="projects__data">
+                <h3 class="projects__title">E-Commerce Website</h3>
+                <p class="projects__description"> It is a shopping site for clothes in which user can buy product, with
+                  complete transaction process. Currently I am working on this project.  </p>
+                <a href="https://github.com/SujalLakhani/E-Commerce" class="button button--flex button--small projects__button">
+                  More Info
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="projects__content grid swiper-slide">
+              <img src="/assets/img/project_2.png" alt="" class="projects__img">
               <div class="projects__data">
                 <h3 class="projects__title">Ethereum Wallet</h3>
                 <p class="projects__description"> It is an android app which can transfer test Ethereum from one
@@ -571,24 +566,12 @@
               </div>
             </div>
             <div class="projects__content grid swiper-slide">
-              <img src="/assets/img/portfolio2.jpg" alt="" class="projects__img">
+              <img src="/assets/img/project_3.png" alt="" class="projects__img">
               <div class="projects__data">
                 <h3 class="projects__title">Loan Status Predictor</h3>
                 <p class="projects__description"> It is a Machine Learning project which predicts that person is 
                   aligible to get the loan or not based the information given by the user.</p>
                 <a href="https://github.com/SujalLakhani/Loan-Status-Predictor" class="button button--flex button--small projects__button">
-                  More Info
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            <div class="projects__content grid swiper-slide">
-              <img src="/assets/img/portfolio3.jpg" alt="" class="projects__img">
-              <div class="projects__data">
-                <h3 class="projects__title">E-Commerce Website</h3>
-                <p class="projects__description"> It is a shopping site for clothes in which user can buy product, with
-                  complete transaction process. Currently I am working on this project.  </p>
-                <a href="https://github.com/SujalLakhani/E-Commerce" class="button button--flex button--small projects__button">
                   More Info
                   <i class="uil uil-arrow-right button__icon"></i>
                 </a>
