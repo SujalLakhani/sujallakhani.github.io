@@ -69,35 +69,6 @@
   }
 }
 
-/*========== Variables Dark theme ==========*/
-/* body.dark-theme {
-  --second-color: hsl(var(--hue-color), 30%, 8%);
-  --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
-  --container-color: hsl(var(--hue-color), 29%, 16%);
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-} */
-
-/*========== Button Dark/Light ==========*/
-/* .nav__btns {
-  display: flex;
-  align-items: center;
-}
-
-.change-theme {
-  font-size: 1.25rem;
-  color: var(--title-color);
-  margin-right: var(--mb-1);
-  cursor: pointer;
-}
-
-.change-theme:hover {
-  color: var(--first-color);
-} */
-
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
@@ -399,7 +370,7 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__img {
-  width: 200px;
+  width: 400px;
   border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
@@ -434,6 +405,7 @@ img {
 
 .about__buttons {
   display: flex;
+  justify-content: center;
 }
 /*==================== SKILLS ====================*/
 .skills__container {
@@ -1017,10 +989,6 @@ img {
     margin-left: auto;
   }
 
-  /* .change-theme {
-    margin: 0;
-  } */
-
   .home__container {
     row-gap: 5rem;
   }
@@ -1057,10 +1025,6 @@ img {
     justify-content: space-between;
   }
 
-  .about__buttons {
-    justify-content: center;
-  }
-
   .qualification__tabs {
     justify-content: center;
   }
@@ -1072,11 +1036,6 @@ img {
   .qualification__sections {
     grid-template-columns: 0.5fr;
   }
-
-  /* .services__container {
-    grid-template-columns: repeat(3, 218px);
-    justify-content: center;
-  } */
 
   .services__modal-content {
     width: 450px;
@@ -1145,8 +1104,4 @@ img {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
   }
-
-  /* .contact__form {
-    width: 460px;
-  } */
 }
