@@ -655,6 +655,7 @@ img {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   text-align: center;
+  margin: 0 0.8rem;
 }
 
 .services__modal-subtitle {
