@@ -63,17 +63,18 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="qualification section">
-        <h2 className="section__title">Educational Qualification</h2>
-        <span className="section__subtitle">My personal journey</span>
-        <div className="qualification__container container">
-          <div className="qualification__sections">
-            <div className="qualification__content">
-              {EduData.map(newEduItems)}
+
+        <section className="qualification section">
+          <h2 className="section__title">Educational Qualification</h2>
+          <span className="section__subtitle">My personal journey</span>
+          <div className="qualification__container container">
+            <div className="qualification__sections">
+              <div className="qualification__content">
+                {EduData.map(newEduItems)}
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </>
   );
