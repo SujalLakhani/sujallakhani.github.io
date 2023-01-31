@@ -94,7 +94,7 @@ const LinkData = [
   {
     liid: 1,
     lihref: "#services",
-    lidata: "Services",
+    lidata: "Internships",
   },
   {
     liid: 2,
@@ -112,24 +112,21 @@ const ProjectData = [
   {
     id: 1,
     title: "Stylish - a clothing site",
-    desc:
-      "It is a shopping site for clothes in which user can buy product, with complete transaction process. Currently I am working on this project.",
+    desc: "It is a shopping site for clothes in which user can buy product, with complete transaction process. Currently I am working on this project.",
     src: require("../assets/img/project_1.png"),
     href: "https://github.com/SujalLakhani/E-Commerce",
   },
   {
     id: 2,
     title: "Ethereum Wallet",
-    desc:
-      "It is an android app which can transfer test Ethereum from one account to another account and also shows the updated balance of user account.",
+    desc: "It is an android app which can transfer test Ethereum from one account to another account and also shows the updated balance of user account.",
     src: require("../assets/img/project_2.png"),
     href: "https://github.com/SujalLakhani/Ethereum-Wallet",
   },
   {
     id: 3,
     title: "Loan Status Predictor",
-    desc:
-      "It is a Machine Learning project which predicts that person is aligible to get the loan or not based the information given by the user.",
+    desc: "It is a Machine Learning project which predicts that person is aligible to get the loan or not based the information given by the user.",
     src: require("../assets/img/project_3.png"),
     href: "https://github.com/SujalLakhani/Loan-Status-Predictor",
   },
@@ -277,8 +274,7 @@ const ServicesData = [
       { id: 2, line: "Definition of the project was Basic Banking System." },
       {
         id: 3,
-        line:
-          "In which I had to develop an Android app that transfers money from one account to another using the SQLite database.",
+        line: "In which I had to develop an Android app that transfers money from one account to another using the SQLite database.",
       },
       { id: 4, line: "Key Skills - Android Studio, Java, SQLite." },
     ],

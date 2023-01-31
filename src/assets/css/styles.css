@@ -277,6 +277,12 @@ img {
 
 .home__blob {
   border-radius: 50%;
+  transition: 0.5s;
+}
+
+.home__blob:hover {
+  box-shadow: 0 1px 20px var(--first-color-alt);
+  transition: 0.5s;
 }
 
 .home__data {
@@ -746,6 +752,8 @@ img {
   background-color: var(--input-color);
   border-radius: 1rem;
   padding: 0.75rem 1rem 0.25rem;
+  margin-top: 1rem;
+  display: grid;
 }
 
 .contact__label {
@@ -761,8 +769,18 @@ img {
   font-size: var(--normal-font-size);
   border: none;
   outline: none;
+  resize: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
+
+.error__message {
+  color: var(--first-color-alt);
+  font-size: 10px;
+  margin-left: 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;
@@ -831,6 +849,7 @@ img {
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
+  border: 2px solid var(--body-color);
 }
 
 .scrollup:hover {
