@@ -26,13 +26,13 @@ const Contact = () => {
         .then(
           (result) => {
             console.log(result.text);
+            document.getElementById("contact__form").reset();
             alert("Message successfully delivered!!");
           },
           (error) => {
             console.log(error.text);
           }
         );
-      document.getElementById("contact__form").reset();
     }
   }, [formErrors]);
 
