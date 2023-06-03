@@ -492,27 +492,31 @@ img {
 }
 
 .skills__js {
-  width: 70%;
+  width: 80%;
 }
 
 .skills__react {
-  width: 80%;
-}
-
-.skills__node {
-  width: 80%;
-}
-
-.skills__express {
-  width: 80%;
-}
-
-.skills__mongodb {
   width: 70%;
 }
 
-.skills__sql {
+.skills__angular {
   width: 90%;
+}
+
+.skills__node {
+  width: 70%;
+}
+
+.skills__express {
+  width: 70%;
+}
+
+.skills__mongodb {
+  width: 60%;
+}
+
+.skills__sql {
+  width: 60%;
 }
 
 .skills__firebase {
@@ -536,7 +540,7 @@ img {
 }
 
 .skills__python {
-  width: 80%;
+  width: 70%;
 }
 
 .skills__close .skills__list {
@@ -604,6 +608,7 @@ img {
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
+  margin: 20px 0px;
 }
 
 .services__container:hover {

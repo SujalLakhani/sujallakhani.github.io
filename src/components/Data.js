@@ -154,14 +154,20 @@ const DomainData = [
       {
         id: 3,
         name: "JavaScript",
-        num: "70%",
+        num: "80%",
         class: "skills__percentage skills__js",
       },
       {
         id: 4,
         name: "React.js",
-        num: "80%",
+        num: "70%",
         class: "skills__percentage skills__react",
+      },
+      {
+        id: 4,
+        name: "Angular",
+        num: "90%",
+        class: "skills__percentage skills__angular",
       },
     ],
   },
@@ -175,25 +181,25 @@ const DomainData = [
       {
         id: 1,
         name: "Node.js",
-        num: "80%",
+        num: "70%",
         class: "skills__percentage skills__node",
       },
       {
         id: 2,
         name: "Express.js",
-        num: "80%",
+        num: "70%",
         class: "skills__percentage skills__express",
       },
       {
         id: 3,
         name: "MongoDB",
-        num: "70%",
+        num: "60%",
         class: "skills__percentage skills__mongodb",
       },
       {
         id: 4,
         name: "SQL",
-        num: "90",
+        num: "60",
         class: "skills__percentage skills__sql",
       },
       {
@@ -247,7 +253,7 @@ const DomainData = [
       {
         id: 2,
         name: "Python",
-        num: "80%",
+        num: "70%",
         class: "skills__percentage skills__python",
       },
       {
@@ -262,6 +268,30 @@ const DomainData = [
 
 const ServicesData = [
   {
+    id: 2,
+    name: "Rapidops Inc.",
+    position: "Software Engineer Intern",
+    duration: "02/2023 - Present",
+    data: [
+      {
+        id: 1,
+        line: "In this internship I had learned about lots of technologies",
+      },
+      {
+        id: 2,
+        line: "Like Angular, TypeScript, JavaScript, Git/GitHub and many more",
+      },
+      {
+        id: 3,
+        line: "Also I had implemented those technologies to develop some small projects",
+      },
+      {
+        id: 4,
+        line: "Currently I am working on the Salesmate CRM, a live project of Rapidops Inc.",
+      },
+    ],
+  },
+  {
     id: 1,
     name: "The Sparks Foundation",
     position: "Android App Developer Intern",
@@ -269,7 +299,7 @@ const ServicesData = [
     data: [
       {
         id: 1,
-        line: "In this internship I have developed a project of Android App.",
+        line: "In this internship I had developed a project of Android App.",
       },
       { id: 2, line: "Definition of the project was Basic Banking System." },
       {
