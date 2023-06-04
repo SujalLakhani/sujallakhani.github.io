@@ -84,7 +84,7 @@ const EduData = [
     id: 3,
     title: "Secondary Education",
     subtitle: "Sigma Education Network - Porbandar",
-    marks: "80.66 %",
+    marks: "86.66 %",
     duration: "2016 - 2017",
     rounder: "qualification__rounder",
   },
