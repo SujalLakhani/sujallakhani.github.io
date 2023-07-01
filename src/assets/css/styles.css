@@ -4,6 +4,7 @@
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 2rem;
+  --mobile-header-height: 3rem;
 
   /*========== Colors ==========*/
   /* Change favorite color */
@@ -184,6 +185,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .nav {
+    height: var(--mobile-header-height);
+  }
   .nav__menu {
     position: fixed;
     bottom: -100%;
