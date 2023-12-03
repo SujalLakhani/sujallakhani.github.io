@@ -37,7 +37,7 @@ const Projects = () => {
           >
             {ProjectData.map((props) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={props.id}>
                   <div className="projects__content grid swiper-slide">
                     <img src={props.src} alt="" className="projects__img" />
                     <div className="projects__data">

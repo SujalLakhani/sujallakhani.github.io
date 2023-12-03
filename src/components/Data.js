@@ -164,7 +164,7 @@ const DomainData = [
         class: "skills__percentage skills__react",
       },
       {
-        id: 4,
+        id: 5,
         name: "Angular",
         num: "90%",
         class: "skills__percentage skills__angular",
