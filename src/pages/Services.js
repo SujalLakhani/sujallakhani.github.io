@@ -17,7 +17,7 @@ const newServicesItems = (props) => {
 const Services = () => {
   return (
     <section className="services section" id="services">
-      <h2 className="section__title">Internships</h2>
+      <h2 className="section__title">Experience</h2>
       <span className="section__subtitle">My work</span>
       {ServicesData.map(newServicesItems)}
     </section>

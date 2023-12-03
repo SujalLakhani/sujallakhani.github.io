@@ -19,7 +19,7 @@
   --input-color: hsl(var(--hue-color), 0%, 100%);
   --text-color: hsl(var(--hue-color), 0%, 10%);
   --text-color-light: hsl(var(--hue-color), 0%, 30%);
-  --body-color: hsl(var(--hue-color), 0%, 98%);
+  --body-color: hsl(var(--hue-color), 0%, 97%);
 
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -55,19 +55,6 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
-}
-
-/* Font size for large devices */
-@media screen and (min-width: 968px) {
-  :root {
-    --big-font-size: 3rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
 }
 
 /*==================== BASE ====================*/
@@ -654,7 +641,7 @@ img {
 }
 
 .services__modal-services {
-  row-gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 .services__modal-service {
@@ -723,6 +710,10 @@ img {
 
 .projects__button:hover .button__icon {
   transform: translateX(0.25rem);
+}
+
+.mySwiper {
+  padding-bottom: 5rem;
 }
 
 .swiper-projects-icon {
@@ -929,6 +920,10 @@ img {
     padding: 0.5rem;
   }
 
+  .services__modal-content {
+    padding: 1.5rem;
+  }
+
   .projects__img {
     width: 200px;
   }
@@ -957,6 +952,10 @@ img {
     display: grid;
     grid-template-columns: 0.6fr;
     justify-content: center;
+  }
+
+  .services__modal-content {
+    padding: 1.5rem;
   }
 }
 
@@ -1056,7 +1055,8 @@ img {
   }
 
   .services__modal-content {
-    width: 450px;
+    width: 650px;
+    padding: 3rem;
   }
 
   .projects__img {
@@ -1086,6 +1086,23 @@ img {
 
   .footer__copy {
     margin-top: 4rem;
+  }
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+
+  .services__modal-content {
+    padding: 3rem;
   }
 }
 
@@ -1121,5 +1138,9 @@ img {
 
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
+  }
+
+  .services__modal-content {
+    padding: 3rem;
   }
 }

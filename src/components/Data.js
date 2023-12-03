@@ -94,7 +94,7 @@ const LinkData = [
   {
     liid: 1,
     lihref: "#services",
-    lidata: "Internships",
+    lidata: "Experience",
   },
   {
     liid: 2,
@@ -268,45 +268,63 @@ const DomainData = [
 
 const ServicesData = [
   {
-    id: 2,
+    id: 3,
     name: "Rapidops Inc.",
-    position: "Software Engineer Intern",
-    duration: "02/2023 - Present",
+    position: "Jr. Software Engineer",
+    duration: "08/2023 - Present",
     data: [
       {
         id: 1,
-        line: "In this internship I had learned about lots of technologies",
+        line: "Currently I am working as a Front-end developer specialized in Angular, my current focus lies within the Salesmate CRM, an ongoing project operated by Rapidops Inc.",
       },
       {
         id: 2,
-        line: "Like Angular, TypeScript, JavaScript, Git/GitHub and many more",
+        line: "As a Jr. Software Developer, my primary responsibility involves the identification and resolution of existing bugs within the Salesmate CRM. This role emphasizes ensuring the platform's smooth and efficient operation.",
       },
       {
         id: 3,
-        line: "Also I had implemented those technologies to develop some small projects",
+        line: "Furthermore, I actively contribute to the enhancement of Salesmate CRM by developing new components or features. This aspect of my work aims to continually improve and innovate the functionalities offered within the platform.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Rapidops Inc.",
+    position: "Software Engineer Intern",
+    duration: "02/2023 - 08/2023",
+    data: [
+      {
+        id: 1,
+        line: "Throughout this internship, I acquired comprehensive knowledge spanning various technologies such as Angular, TypeScript, JavaScript, Git/GitHub, and several others. This learning process provided me with a broad understanding of diverse tech tools and frameworks.",
       },
       {
-        id: 4,
-        line: "Currently I am working on the Salesmate CRM, a live project of Rapidops Inc.",
+        id: 2,
+        line: "Applying the acquired knowledge, I successfully utilized these technologies in the creation of several small-scale projects. This practical application allowed me to gain hands-on experience and deepen my understanding of their functionalities.",
+      },
+      {
+        id: 3,
+        line: "As a Software Engineer Intern, I actively contributed to the Salesmate CRM, a live project managed by Rapidops Inc. This involvement included developing essential components and effectively resolving existing bugs, thereby directly impacting the project's advancement and functionality.",
       },
     ],
   },
   {
     id: 1,
     name: "The Sparks Foundation",
-    position: "Android App Developer Intern",
+    position: "Android Developer Intern",
     duration: "09/2021 - 10/2021",
     data: [
       {
         id: 1,
-        line: "In this internship I had developed a project of Android App.",
+        line: "As an Android Developer Intern, I gained practical experience in utilizing essential technologies such as Android Studio, Java, and SQLite to create functional applications.",
       },
-      { id: 2, line: "Definition of the project was Basic Banking System." },
+      {
+        id: 2,
+        line: "I successfully completed a project centered on a Basic Banking System Android App, wherein my task was to create functionality for money transfers between accounts leveraging SQLite database.",
+      },
       {
         id: 3,
-        line: "In which I had to develop an Android app that transfers money from one account to another using the SQLite database.",
+        line: "A significant aspect of my learning involved mastering the implementation of CRUD (Create, Read, Update, Delete) operations using the SQLite database within the Android Studio environment.",
       },
-      { id: 4, line: "Key Skills - Android Studio, Java, SQLite." },
     ],
   },
 ];

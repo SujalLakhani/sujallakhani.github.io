@@ -82,7 +82,7 @@ const Header = () => {
                 className="nav__link"
                 onClick={() => setSelected(false)}
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i> Internships
+                <i className="uil uil-briefcase-alt nav__icon"></i> Experience
               </a>
             </li>
             <li className="nav__item">

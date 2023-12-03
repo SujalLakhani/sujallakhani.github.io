@@ -1,5 +1,5 @@
 import React from "react";
-import { EduData } from "../components/Data";
+import { EduData, ServicesData } from "../components/Data";
 import EduItems from "../components/EduItems";
 
 const newEduItems = (props) => {
@@ -47,8 +47,8 @@ const About = () => {
                 <span className="about__info-name"> Certifications </span>
               </div>
               <div>
-                <span className="about__info-title">2</span>
-                <span className="about__info-name"> Internship </span>
+                <span className="about__info-title">{ServicesData.length}</span>
+                <span className="about__info-name"> Experience </span>
               </div>
             </div>
             <div className="about__buttons">
