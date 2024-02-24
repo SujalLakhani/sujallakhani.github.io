@@ -61,7 +61,7 @@ const Home = (props) => {
               Wide range of experience in app and web design and development
               knowledge, producing quality work.
             </p>
-            <a href="#contact" className="button button--flex">
+            <a href="mailto:sujallakhani98@gmail.com" className="button button--flex">
               Contact Me <i className="uil uil-message button__icon"></i>
             </a>
           </div>

@@ -59,6 +59,11 @@ const SocialData = [
     link: "https://www.instagram.com/sujal_lakhani_01/",
     class: "uil uil-instagram",
   },
+  {
+    id: 4,
+    link: "mailto:sujallakhani98@gmail.com",
+    class: "uil uil-envelope-alt",
+  }
 ];
 
 const EduData = [

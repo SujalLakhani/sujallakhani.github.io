@@ -272,7 +272,7 @@ img {
 }
 
 .home__blob:hover {
-  box-shadow: 0 1px 20px var(--first-color-alt);
+  box-shadow: 0 1px 12px var(--first-color);
   transition: 0.5s;
 }
 
@@ -599,7 +599,7 @@ img {
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
-  margin: 20px 0px;
+  margin: 20px 20px;
 }
 
 .services__container:hover {
