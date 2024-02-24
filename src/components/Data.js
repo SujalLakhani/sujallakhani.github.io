@@ -101,11 +101,11 @@ const LinkData = [
     lihref: "#projects",
     lidata: "Projects",
   },
-  {
-    liid: 3,
-    lihref: "#contact",
-    lidata: "ContactMe",
-  },
+  // {
+  //   liid: 3,
+  //   lihref: "#contact",
+  //   lidata: "ContactMe",
+  // },
 ];
 
 const ProjectData = [

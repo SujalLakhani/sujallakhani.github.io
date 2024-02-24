@@ -19,7 +19,7 @@ function App() {
         <Skills />
         <Services />
         <Projects />
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </>

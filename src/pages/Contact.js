@@ -14,27 +14,7 @@ const Contact = () => {
     setIsSubmit(true);
   };
 
-  useEffect(() => {
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      emailjs
-        .sendForm(
-          "service_p7vlfkk",
-          "template_5imwj18",
-          form.current,
-          "ZBqoIuBwHHZyzfGLL"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            document.getElementById("contact__form").reset();
-            alert("Message successfully delivered!!");
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    }
-  }, [formErrors]);
+
 
   const validate = (values) => {
     const errors = {};
