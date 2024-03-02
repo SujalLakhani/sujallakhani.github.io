@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.df6a2549.css",
-    "main.js": "/static/js/main.1ae09125.js",
-    "static/media/about_me.jpg": "/static/media/about_me.16b51a1ec725cb735c91.jpg",
-    "static/media/project_1.png": "/static/media/project_1.527ce53647c724f68910.png",
-    "static/media/project_3.png": "/static/media/project_3.404a74f7fe6a8527b1ad.png",
-    "static/media/project_2.png": "/static/media/project_2.5f7ee4df5e71d372ff9a.png",
-    "static/media/about.jpg": "/static/media/about.19b80818309a47b8c5c0.jpg",
+    "main.js": "/static/js/main.3a03c2af.js",
+    "static/media/about.webp": "/static/media/about.0b958323974154adf650.webp",
     "static/media/Sujal's Resume.pdf": "/static/media/Sujal's Resume.ec8b514c1e9891d57c24.pdf",
+    "static/media/about_me.webp": "/static/media/about_me.7d82454937a515446dca.webp",
+    "static/media/project_3.webp": "/static/media/project_3.0278990b791875727c13.webp",
+    "static/media/project_1.webp": "/static/media/project_1.ba1b4a3b9f489c067933.webp",
+    "static/media/project_2.webp": "/static/media/project_2.e64cbc76c38cf963f85a.webp",
     "index.html": "/index.html",
     "main.df6a2549.css.map": "/static/css/main.df6a2549.css.map",
-    "main.1ae09125.js.map": "/static/js/main.1ae09125.js.map"
+    "main.3a03c2af.js.map": "/static/js/main.3a03c2af.js.map"
   },
   "entrypoints": [
     "static/css/main.df6a2549.css",
-    "static/js/main.1ae09125.js"
+    "static/js/main.3a03c2af.js"
   ]
 }
