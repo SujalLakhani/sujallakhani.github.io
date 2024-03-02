@@ -25,8 +25,8 @@ const About = () => {
 
         <div className="about__container container grid">
           <img
-            src={require("../assets/img/about_me.jpg")}
-            alt="about_me.jpg"
+            src={require("../assets/img/about_me.webp")}
+            alt="about_me.webp"
             className="about__img"
           />
           <div className="about__data">

@@ -49,8 +49,8 @@ const Home = (props) => {
           <div className="home__social">{SocialData.map(newSocialItems)}</div>
           <div className="home__img">
             <img
-              src={require("../assets/img/about.jpg")}
-              alt="about.jpg"
+              src={require("../assets/img/about.webp")}
+              alt="about.webp"
               className="home__blob"
             />
           </div>
