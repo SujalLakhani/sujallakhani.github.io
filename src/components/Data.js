@@ -152,7 +152,7 @@ const DomainData = [
       {
         id: 4,
         name: "React.js",
-        num: "70"
+        num: "90"
       },
       {
         id: 3,
