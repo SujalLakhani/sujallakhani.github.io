@@ -145,35 +145,36 @@ const DomainData = [
     class: "uil uil-brackets-curly skills__icon",
     dataset: [
       {
-        id: 1,
-        name: "HTML",
-        num: "90%",
-        class: "skills__percentage skills__html",
-      },
-      {
-        id: 2,
-        name: "CSS",
-        num: "80%",
-        class: "skills__percentage skills__css",
-      },
-      {
-        id: 3,
-        name: "JavaScript",
-        num: "80%",
-        class: "skills__percentage skills__js",
+        id: 5,
+        name: "Angular",
+        num: "90"
       },
       {
         id: 4,
         name: "React.js",
-        num: "70%",
-        class: "skills__percentage skills__react",
+        num: "70"
       },
       {
-        id: 5,
-        name: "Angular",
-        num: "90%",
-        class: "skills__percentage skills__angular",
+        id: 3,
+        name: "JavaScript",
+        num: "90"
       },
+      {
+        id: 3,
+        name: "TypeScript",
+        num: "90"
+      },
+      {
+        id: 1,
+        name: "HTML",
+        num: "90"
+      },
+      {
+        id: 2,
+        name: "CSS",
+        num: "80"
+      },
+      
     ],
   },
   {
@@ -186,87 +187,52 @@ const DomainData = [
       {
         id: 1,
         name: "Node.js",
-        num: "70%",
-        class: "skills__percentage skills__node",
+        num: "90"
       },
       {
         id: 2,
         name: "Express.js",
-        num: "70%",
-        class: "skills__percentage skills__express",
+        num: "90"
       },
       {
         id: 3,
         name: "MongoDB",
-        num: "60%",
-        class: "skills__percentage skills__mongodb",
+        num: "80"
       },
       {
         id: 4,
-        name: "SQL",
-        num: "60",
-        class: "skills__percentage skills__sql",
+        name: "MySQL",
+        num: "80"
       },
       {
-        id: 5,
-        name: "Firebase",
-        num: "60%",
-        class: "skills__percentage skills__firebase",
-      },
+        id: 4,
+        name: "PostgreSQL",
+        num: "80"
+      }
     ],
   },
   {
     id: 3,
-    title: "Mobile App developer",
-    subtitle:
-      "Extensive experience in Android Native App and Cross Platform App development.",
-    class: "uil uil-mobile-android skills__icon",
-    dataset: [
-      {
-        id: 1,
-        name: "Java for Android",
-        num: "90%",
-        class: "skills__percentage skills__java",
-      },
-      {
-        id: 2,
-        name: "Android Studio",
-        num: "80%",
-        class: "skills__percentage skills__android__studio",
-      },
-      {
-        id: 3,
-        name: "React Native",
-        num: "60%",
-        class: "skills__percentage skills__react__native",
-      },
-    ],
-  },
-  {
-    id: 4,
     title: "Competitive Coding",
     subtitle:
-      "More than 200+ problems solved using different languages. also participated in different competitive coding contest.",
+      "More than 250+ problems solved using different languages. also participated in different competitive coding contest.",
     class: "uil uil-desktop skills__icon",
     dataset: [
       {
+        id: 3,
+        name: "JavaScript",
+        num: "90"
+      },
+      {
         id: 1,
         name: "Core Java",
-        num: "90%",
-        class: "skills__percentage skills__java",
+        num: "80"
       },
       {
         id: 2,
         name: "Python",
-        num: "70%",
-        class: "skills__percentage skills__python",
-      },
-      {
-        id: 3,
-        name: "C/C++",
-        num: "70%",
-        class: "skills__percentage skills__cpp",
-      },
+        num: "70"
+      }
     ],
   },
 ];
