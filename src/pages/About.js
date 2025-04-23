@@ -53,8 +53,8 @@ const About = () => {
             </div>
             <div className="about__buttons">
               <a
-                download="Sujal's Resume"
-                href={require("../assets/pdf/Sujal's Resume.pdf")}
+                download="Resume of Sujal Lakhani"
+                href={require("../assets/pdf/Resume of Sujal Lakhani.pdf")}
                 className="button button--flex"
               >
                 Download Resume
