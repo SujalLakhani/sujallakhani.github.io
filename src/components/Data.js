@@ -246,7 +246,7 @@ const ServicesData = [
     data: [
       {
         id: 1,
-        line: "Currently I am working as a Front-end developer specialized in Angular, my current focus lies within the Salesmate CRM, an ongoing project operated by Rapidops Inc.",
+        line: "Currently I am working as a Jr. Software Developer, my current focus lies within the Salesmate CRM, an ongoing project operated by Rapidops Inc.",
       },
       {
         id: 2,
@@ -266,7 +266,7 @@ const ServicesData = [
     data: [
       {
         id: 1,
-        line: "Throughout this internship, I acquired comprehensive knowledge spanning various technologies such as Angular, TypeScript, JavaScript, Git/GitHub, and several others. This learning process provided me with a broad understanding of diverse tech tools and frameworks.",
+        line: "Throughout this internship, I acquired comprehensive knowledge spanning various technologies such as Angular 2+, React.js, Node.js, Express.js, MongoDB, RDBMS, SQL, TypeScript, JavaScript, Git/GitHub, HTML, CSS, Ubuntu, and several others. This learning process provided me with a broad understanding of diverse tech tools and frameworks.",
       },
       {
         id: 2,
