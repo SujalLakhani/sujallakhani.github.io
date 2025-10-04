@@ -55,11 +55,6 @@ const SocialData = [
     class: "uil uil-github-alt",
   },
   {
-    id: 3,
-    link: "https://www.instagram.com/sujal_lakhani_01/",
-    class: "uil uil-instagram",
-  },
-  {
     id: 4,
     link: "mailto:sujallakhani98@gmail.com",
     class: "uil uil-envelope-alt",
@@ -70,7 +65,7 @@ const EduData = [
   {
     id: 1,
     title: "Information Technology",
-    subtitle: "G. H. Patel College of Engineering & Technology - Anand",
+    subtitle: "Gujarat Technological University - Ahmedabad",
     marks: "8.88 CGPI",
     duration: "2019 - 2023",
     rounder: "qualification__rounder",
@@ -241,8 +236,32 @@ const ServicesData = [
   {
     id: 3,
     name: "Rapidops Inc.",
+    position: "Software Engineer",
+    duration: "08/2025 - Present",
+    data: [
+      {
+        id: 1,
+        line: "Developing and optimizing Salesmate CRM features including Dashboard Filters, Reports, Goal Management, Real-time Chat, and Document/Email Template Builder, improving usability and performance. ",
+      },
+      {
+        id: 2,
+        line: "Enhanced product reliability by resolving bugs, managing feature enhancements, and implementing pipeline-level permissions for secure access. ",
+      },
+      {
+        id: 3,
+        line: "Implemented AI-driven features (Intent & Entity extraction, Smartflow dialogs) enabling intelligent automation.",
+      },
+      {
+        id: 4,
+        line: "Collaborated in an Agile/Scrum environment , improving delivery efficiency."
+      }
+    ],
+  },
+  {
+    id: 3,
+    name: "Rapidops Inc.",
     position: "Jr. Software Engineer",
-    duration: "08/2023 - Present",
+    duration: "08/2023 - 08-2025",
     data: [
       {
         id: 1,

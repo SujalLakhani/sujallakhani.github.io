@@ -31,11 +31,10 @@ const About = () => {
           />
           <div className="about__data">
             <p className="about__description">
-              I have keen interest in problem solving and software development
-              technologies. I consistently work on my technical skills and
-              knowledge to give better contribution to the society and
-              organization. also I have wide range of experience in app and web
-              development.
+              AI-driven Full Stack Software Engineer with 2 years of experience in developing and optimizing scalable web applications using
+              Angular, React.js, Node.js, and TypeScript. Strong problem-solving skills demonstrated through solving 300+ coding challenges on
+              LeetCode. Experienced in integrating AI tools to enhance workflows, achieving up to 80% reduction in code complexity and 10x
+              faster load times. 
             </p>
             <div className="about__info">
               <div>
@@ -47,7 +46,7 @@ const About = () => {
                 <span className="about__info-name"> Certifications </span>
               </div>
               <div>
-                <span className="about__info-title">{ServicesData.length}</span>
+                <span className="about__info-title">2 Years</span>
                 <span className="about__info-name"> Experience </span>
               </div>
             </div>

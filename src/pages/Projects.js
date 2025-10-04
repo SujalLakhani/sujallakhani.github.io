@@ -1,9 +1,11 @@
 import React from "react";
 import { ProjectData } from "../components/Data";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
+import { Autoplay, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 // const newProjectItems = (props) => {
 //   return (
