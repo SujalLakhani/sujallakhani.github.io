@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0e21cbd.css",
-    "main.js": "/static/js/main.1cdf7e57.js",
+    "main.css": "/static/css/main.de37cd8c.css",
+    "main.js": "/static/js/main.8479e8e9.js",
     "static/media/about.webp": "/static/media/about.0b958323974154adf650.webp",
     "static/media/about_me.webp": "/static/media/about_me.7d82454937a515446dca.webp",
-    "static/media/Resume of Sujal Lakhani.pdf": "/static/media/Resume of Sujal Lakhani.d52f7562cf53a83111cb.pdf",
+    "static/media/Resume of Sujal Lakhani.pdf": "/static/media/Resume of Sujal Lakhani.844fcaecca10057b6e1b.pdf",
     "static/media/project_3.webp": "/static/media/project_3.0278990b791875727c13.webp",
     "static/media/project_1.webp": "/static/media/project_1.ba1b4a3b9f489c067933.webp",
     "static/media/project_2.webp": "/static/media/project_2.e64cbc76c38cf963f85a.webp",
     "index.html": "/index.html",
-    "main.b0e21cbd.css.map": "/static/css/main.b0e21cbd.css.map",
-    "main.1cdf7e57.js.map": "/static/js/main.1cdf7e57.js.map"
+    "main.de37cd8c.css.map": "/static/css/main.de37cd8c.css.map",
+    "main.8479e8e9.js.map": "/static/js/main.8479e8e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0e21cbd.css",
-    "static/js/main.1cdf7e57.js"
+    "static/css/main.de37cd8c.css",
+    "static/js/main.8479e8e9.js"
   ]
 }
