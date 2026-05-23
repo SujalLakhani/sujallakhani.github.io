@@ -1,3 +1,7 @@
+import project1 from "../assets/img/project_1.webp";
+import project2 from "../assets/img/project_2.webp";
+import project3 from "../assets/img/project_3.webp";
+
 const ListData = [
   {
     id: 1,
@@ -93,19 +97,29 @@ const EduData = [
 const LinkData = [
   {
     liid: 1,
+    lihref: "#home",
+    lidata: "Home",
+  },
+  {
+    liid: 2,
+    lihref: "#about",
+    lidata: "About",
+  },
+  {
+    liid: 3,
+    lihref: "#skills",
+    lidata: "Skills",
+  },
+  {
+    liid: 4,
     lihref: "#services",
     lidata: "Experience",
   },
   {
-    liid: 2,
+    liid: 5,
     lihref: "#projects",
     lidata: "Projects",
   },
-  // {
-  //   liid: 3,
-  //   lihref: "#contact",
-  //   lidata: "ContactMe",
-  // },
 ];
 
 const ProjectData = [
@@ -113,21 +127,21 @@ const ProjectData = [
     id: 1,
     title: "Stylish - a clothing site",
     desc: "It is a shopping site for clothes in which user can buy product, with complete transaction process. Currently I am working on this project.",
-    src: require("../assets/img/project_1.webp"),
+    src: project1,
     href: "https://github.com/SujalLakhani/E-Commerce",
   },
   {
     id: 2,
     title: "Ethereum Wallet",
     desc: "It is an android app which can transfer test Ethereum from one account to another account and also shows the updated balance of user account.",
-    src: require("../assets/img/project_2.webp"),
+    src: project2,
     href: "https://github.com/SujalLakhani/Ethereum-Wallet",
   },
   {
     id: 3,
     title: "Loan Status Predictor",
     desc: "It is a Machine Learning project which predicts that person is aligible to get the loan or not based the information given by the user.",
-    src: require("../assets/img/project_3.webp"),
+    src: project3,
     href: "https://github.com/SujalLakhani/Loan-Status-Predictor",
   },
 ];
@@ -155,7 +169,7 @@ const DomainData = [
         num: "90"
       },
       {
-        id: 3,
+        id: 6,
         name: "TypeScript",
         num: "90"
       },
@@ -200,7 +214,7 @@ const DomainData = [
         num: "80"
       },
       {
-        id: 4,
+        id: 5,
         name: "PostgreSQL",
         num: "80"
       }
@@ -234,7 +248,7 @@ const DomainData = [
 
 const ServicesData = [
   {
-    id: 3,
+    id: 4,
     name: "Rapidops Inc.",
     position: "Software Engineer",
     duration: "08/2025 - Present",
@@ -319,7 +333,7 @@ const ServicesData = [
   },
 ];
 
-module.exports = {
+export {
   ListData,
   SocialData,
   EduData,

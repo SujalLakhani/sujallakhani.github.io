@@ -1,6 +1,8 @@
 import React from "react";
 import { EduData, ServicesData } from "../components/Data";
 import EduItems from "../components/EduItems";
+import aboutMeImg from "../assets/img/about_me.webp";
+import resumePdf from "../assets/pdf/Resume of Sujal Lakhani.pdf";
 
 const newEduItems = (props) => {
   return (
@@ -25,7 +27,7 @@ const About = () => {
 
         <div className="about__container container grid">
           <img
-            src={require("../assets/img/about_me.webp")}
+            src={aboutMeImg}
             alt="about_me.webp"
             className="about__img"
           />
@@ -53,7 +55,7 @@ const About = () => {
             <div className="about__buttons">
               <a
                 download="Resume of Sujal Lakhani"
-                href={require("../assets/pdf/Resume of Sujal Lakhani.pdf")}
+                href={resumePdf}
                 className="button button--flex"
               >
                 Download Resume

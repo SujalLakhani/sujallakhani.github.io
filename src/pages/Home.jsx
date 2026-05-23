@@ -1,6 +1,7 @@
 import React from "react";
 import SocialItems from "../components/SocialItems";
 import { SocialData } from "../components/Data";
+import aboutImg from "../assets/img/about.webp";
 
 const newSocialItems = (props) => {
   return (
@@ -49,7 +50,7 @@ const Home = (props) => {
           <div className="home__social">{SocialData.map(newSocialItems)}</div>
           <div className="home__img">
             <img
-              src={require("../assets/img/about.webp")}
+              src={aboutImg}
               alt="about.webp"
               className="home__blob"
             />
