@@ -129,6 +129,7 @@ const ProjectData = [
     desc: "It is a shopping site for clothes in which user can buy product, with complete transaction process. Currently I am working on this project.",
     src: project1,
     href: "https://github.com/SujalLakhani/E-Commerce",
+    tags: ["React", "Node.js", "Express", "MongoDB", "CSS3"]
   },
   {
     id: 2,
@@ -136,6 +137,7 @@ const ProjectData = [
     desc: "It is an android app which can transfer test Ethereum from one account to another account and also shows the updated balance of user account.",
     src: project2,
     href: "https://github.com/SujalLakhani/Ethereum-Wallet",
+    tags: ["Android", "Java", "SQLite", "XML"]
   },
   {
     id: 3,
@@ -143,6 +145,7 @@ const ProjectData = [
     desc: "It is a Machine Learning project which predicts that person is aligible to get the loan or not based the information given by the user.",
     src: project3,
     href: "https://github.com/SujalLakhani/Loan-Status-Predictor",
+    tags: ["Python", "Flask", "Scikit-Learn", "Machine Learning"]
   },
 ];
 
@@ -210,11 +213,16 @@ const DomainData = [
       },
       {
         id: 4,
-        name: "MySQL",
+        name: "Spring Boot",
         num: "80"
       },
       {
         id: 5,
+        name: "MySQL",
+        num: "80"
+      },
+      {
+        id: 6,
         name: "PostgreSQL",
         num: "80"
       }

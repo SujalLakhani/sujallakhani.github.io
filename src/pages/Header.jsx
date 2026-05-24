@@ -1,39 +1,52 @@
 import React, { useEffect, useState } from "react";
+import { ListData } from "../components/Data";
 
 const Header = () => {
-  let [selected, setSelected] = useState(false);
-  let [scrollHead, setScrollHead] = useState(false);
+  const [selected, setSelected] = useState(false);
+  const [scrollHead, setScrollHead] = useState(false);
+  const [theme, setTheme] = useState("light");
+
+  // Sync theme switch
+  const toggleTheme = () => {
+    if (theme === "light") {
+      document.body.classList.add("dark-theme");
+      setTheme("dark");
+    } else {
+      document.body.classList.remove("dark-theme");
+      setTheme("light");
+    }
+  };
+
   useEffect(() => {
-    const handleScrollVisibility = () => {
-      window.pageYOffset > 80 ? setScrollHead(true) : setScrollHead(false);
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      
+      // Header sticky visual style
+      scrollY > 80 ? setScrollHead(true) : setScrollHead(false);
+
+      // Scroll active link mapping
+      const sections = document.querySelectorAll("section[id]");
+      sections.forEach((current) => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 65; // header padding offset
+        const sectionId = current.getAttribute("id");
+        const link = document.querySelector(`.nav__menu a[href*="${sectionId}"]`);
+
+        if (link) {
+          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            link.classList.add("active-link");
+          } else {
+            link.classList.remove("active-link");
+          }
+        }
+      });
     };
-    window.addEventListener("scroll", handleScrollVisibility);
+
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScrollVisibility);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const sections = document.querySelectorAll("section[id]");
-  function scrollActive() {
-    const scrollY = window.pageYOffset;
-
-    sections.forEach((current) => {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 50;
-      let sectionId = current.getAttribute("id");
-
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        document
-          .querySelector(".nav__menu a[href*=" + sectionId + "]")
-          .classList.add("active-link");
-      } else {
-        document
-          .querySelector(".nav__menu a[href*=" + sectionId + "]")
-          .classList.remove("active-link");
-      }
-    });
-  }
-  window.addEventListener("scroll", scrollActive);
 
   return (
     <header
@@ -49,60 +62,18 @@ const Header = () => {
           id="nav-menu"
         >
           <ul className="nav__list grid">
-            <li className="nav__item">
-              <a
-                href="#home"
-                className="nav__link active-link"
-                onClick={() => setSelected(false)}
-              >
-                <i className="uil uil-estate nav__icon"></i> Home
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#about"
-                className="nav__link"
-                onClick={() => setSelected(false)}
-              >
-                <i className="uil uil-user nav__icon"></i> About
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#skills"
-                className="nav__link"
-                onClick={() => setSelected(false)}
-              >
-                <i className="uil uil-file-alt nav__icon"></i> Skills
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#services"
-                className="nav__link"
-                onClick={() => setSelected(false)}
-              >
-                <i className="uil uil-briefcase-alt nav__icon"></i> Experience
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#projects"
-                className="nav__link"
-                onClick={() => setSelected(false)}
-              >
-                <i className="uil uil-scenery nav__icon"></i> Projects
-              </a>
-            </li>
-            {/* <li className="nav__item">
-              <a
-                href="#contact"
-                className="nav__link"
-                onClick={() => setSelected(false)}
-              >
-                <i className="uil uil-message nav__icon"></i> Contact me
-              </a>
-            </li> */}
+            {ListData.map((item) => (
+              <li key={item.id} className="nav__item">
+                <a
+                  href={item.liHref}
+                  className="nav__link"
+                  onClick={() => setSelected(false)}
+                >
+                  <i className={`${item.iClass} nav__icon`}></i>
+                  {item.name === "Services" ? "Experience" : item.name}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <i
@@ -111,7 +82,13 @@ const Header = () => {
             onClick={() => setSelected(false)}
           ></i>
         </div>
-        <div className="nav__btns">
+        
+        <div className="nav__btns" style={{ display: "flex", alignItems: "center" }}>
+          {/* Theme Toggle Button */}
+          <div className="theme-toggle-btn" onClick={toggleTheme}>
+            <i className={`uil ${theme === "light" ? "uil-moon" : "uil-sun"}`}></i>
+          </div>
+
           <div
             className="nav__toggle"
             id="nav-toggle"
@@ -126,3 +103,4 @@ const Header = () => {
 };
 
 export default Header;
+
