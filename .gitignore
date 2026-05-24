@@ -1,2 +1,11 @@
 # dependencies
 /node_modules
+
+# production
+/build
+
+# vite temp files
+vite.config.js.timestamp-*
+
+# local env files
+.env
