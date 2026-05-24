@@ -413,8 +413,7 @@ img {
 }
 
 .home__blob:hover {
-  transform: scale(1.03) rotate(1deg);
-  box-shadow: 0 20px 45px var(--shadow-color);
+  transform: translateY(-3px);
 }
 
 .home__data {
@@ -1431,4 +1430,16 @@ img {
   height: auto;
   object-fit: contain;
   filter: grayscale(100%); /* Strict monochromatic filter safeguard */
+}
+
+.about__img--dark {
+  display: none;
+}
+
+.dark-theme .about__img--light {
+  display: none;
+}
+
+.dark-theme .about__img--dark {
+  display: block;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import aboutMeMonoImg from "../assets/img/about_me_mono.png";
+import aboutMeDarkImg from "../assets/img/about_me_dark.png";
 import resumePdf from "../assets/pdf/Resume of Sujal Lakhani.pdf";
 
 const About = () => {
@@ -15,7 +16,12 @@ const About = () => {
             <img
               src={aboutMeMonoImg}
               alt="Sujal Lakhani"
-              className="about__img"
+              className="about__img about__img--light"
+            />
+            <img
+              src={aboutMeDarkImg}
+              alt="Sujal Lakhani"
+              className="about__img about__img--dark"
             />
           </div>
         </div>
