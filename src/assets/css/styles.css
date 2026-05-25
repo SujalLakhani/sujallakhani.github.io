@@ -299,6 +299,23 @@ img {
   transition: color 0.3s ease;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  position: relative;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+}
+
+.nav__link.active-link::after {
+  transform: scale(1);
 }
 
 .nav__link:hover {
@@ -332,7 +349,6 @@ img {
 /* Active link */
 .active-link {
   color: var(--accent-color);
-  font-weight: var(--font-semi-bold);
 }
 
 /* Change background header */
@@ -974,7 +990,7 @@ img {
   padding: 0.65rem;
   border-radius: 50%;
   z-index: var(--z-tooltip);
-  transition: bottom 0.4s ease, background-color 0.3s ease, transform 0.3s ease;
+  transition: bottom 0.4s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -983,12 +999,14 @@ img {
 
 .scrollup:hover {
   background-color: var(--first-color-alt);
+  border-color: var(--first-color-alt);
   transform: translateY(-3px);
 }
 
 .scrollup__icon {
   font-size: 1.25rem;
-  color: hsl(0, 0%, 100%);
+  color: var(--body-color);
+  transition: color 0.3s ease;
 }
 
 /* Show scroll */
@@ -1319,6 +1337,10 @@ img {
     padding: 0;
   }
 
+  .nav__link::after {
+    bottom: -8px;
+  }
+
   .nav__menu {
     margin-left: auto;
   }
@@ -1429,7 +1451,8 @@ img {
   width: 100%;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%); /* Strict monochromatic filter safeguard */
+  filter: grayscale(100%);
+  /* Strict monochromatic filter safeguard */
 }
 
 .about__img--dark {

@@ -38,13 +38,6 @@ const ListData = [
     iClass: "uil uil-scenery nav__icon",
     name: "Projects",
   },
-  {
-    id: 6,
-    liHref: "#contact",
-    liClass: "nav__link",
-    iClass: "uil uil-message nav__icon",
-    name: "Contact",
-  },
 ];
 
 const SocialData = [
