@@ -7,7 +7,6 @@ import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
-import CustomCursor from "./components/CustomCursor";
 import "./assets/css/styles.css";
 
 function App() {
@@ -37,7 +36,6 @@ function App() {
   }, []);
   return (
     <>
-      <CustomCursor />
       <Header />
       <main className="main">
         <Home />
