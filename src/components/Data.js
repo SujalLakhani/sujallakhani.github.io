@@ -6,35 +6,30 @@ const ListData = [
   {
     id: 1,
     liHref: "#home",
-    liClass: "nav__link active-link",
     iClass: "uil uil-estate nav__icon",
     name: "Home",
   },
   {
     id: 2,
     liHref: "#about",
-    liClass: "nav__link",
     iClass: "uil uil-user nav__icon",
     name: "About",
   },
   {
     id: 3,
     liHref: "#skills",
-    liClass: "nav__link",
     iClass: "uil uil-file-alt nav__icon",
     name: "Skills",
   },
   {
     id: 4,
     liHref: "#services",
-    liClass: "nav__link",
     iClass: "uil uil-briefcase-alt nav__icon",
-    name: "Services",
+    name: "Experience",
   },
   {
     id: 5,
     liHref: "#projects",
-    liClass: "nav__link",
     iClass: "uil uil-scenery nav__icon",
     name: "Projects",
   },
@@ -65,8 +60,6 @@ const EduData = [
     subtitle: "Gujarat Technological University - Ahmedabad",
     marks: "8.88 CGPI",
     duration: "2019 - 2023",
-    rounder: "qualification__rounder",
-    line: "qualification__line",
   },
   {
     id: 2,
@@ -74,8 +67,6 @@ const EduData = [
     subtitle: "Sigma Education Network - Porbandar",
     marks: "80.61 %",
     duration: "2018 - 2019",
-    rounder: "qualification__rounder",
-    line: "qualification__line",
   },
   {
     id: 3,
@@ -83,37 +74,10 @@ const EduData = [
     subtitle: "Sigma Education Network - Porbandar",
     marks: "86.66 %",
     duration: "2016 - 2017",
-    rounder: "qualification__rounder",
   },
 ];
 
-const LinkData = [
-  {
-    liid: 1,
-    lihref: "#home",
-    lidata: "Home",
-  },
-  {
-    liid: 2,
-    lihref: "#about",
-    lidata: "About",
-  },
-  {
-    liid: 3,
-    lihref: "#skills",
-    lidata: "Skills",
-  },
-  {
-    liid: 4,
-    lihref: "#services",
-    lidata: "Experience",
-  },
-  {
-    liid: 5,
-    lihref: "#projects",
-    lidata: "Projects",
-  },
-];
+
 
 const ProjectData = [
   {
@@ -147,7 +111,6 @@ const DomainData = [
     id: 1,
     title: "Frontend developer",
     subtitle: "Decent level of Frontend development expertise.",
-    class: "uil uil-brackets-curly skills__icon",
     dataset: [
       {
         id: 5,
@@ -187,7 +150,6 @@ const DomainData = [
     title: "Backend developer",
     subtitle:
       "Wide range of experience in Backend development and Database Management System.",
-    class: "uil uil-server skills__icon",
     dataset: [
       {
         id: 1,
@@ -226,7 +188,6 @@ const DomainData = [
     title: "Competitive Coding",
     subtitle:
       "More than 250+ problems solved using different languages. also participated in different competitive coding contest.",
-    class: "uil uil-desktop skills__icon",
     dataset: [
       {
         id: 3,
@@ -331,7 +292,6 @@ export {
   ListData,
   SocialData,
   EduData,
-  LinkData,
   ProjectData,
   DomainData,
   ServicesData,

@@ -5,6 +5,7 @@ const Header = () => {
   const [selected, setSelected] = useState(false);
   const [scrollHead, setScrollHead] = useState(false);
   const [theme, setTheme] = useState("light");
+  const [activeSection, setActiveSection] = useState("home");
 
   // Sync theme switch
   const toggleTheme = () => {
@@ -18,16 +19,9 @@ const Header = () => {
   };
 
   useEffect(() => {
-    // 1. Sticky header style with requestAnimationFrame throttling
-    let ticking = false;
+    // 1. Sticky header scroll check
     const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          setScrollHead(window.scrollY > 80);
-          ticking = false;
-        });
-        ticking = true;
-      }
+      setScrollHead(window.scrollY > 80);
     };
 
     // 2. Active section highlight using IntersectionObserver
@@ -42,19 +36,7 @@ const Header = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const sectionId = entry.target.getAttribute("id");
-          
-          // Query active link in header menu
-          const activeLink = document.querySelector(`.nav__menu a[href*="${sectionId}"]`);
-          
-          if (activeLink) {
-            // Remove active class from all nav links
-            document.querySelectorAll(".nav__link").forEach((link) => {
-              link.classList.remove("active-link");
-            });
-            
-            // Add active class to the current active link
-            activeLink.classList.add("active-link");
-          }
+          setActiveSection(sectionId);
         }
       });
     };
@@ -92,11 +74,13 @@ const Header = () => {
               <li key={item.id} className="nav__item">
                 <a
                   href={item.liHref}
-                  className="nav__link"
+                  className={`nav__link ${
+                    activeSection === item.liHref.substring(1) ? "active-link" : ""
+                  }`}
                   onClick={() => setSelected(false)}
                 >
                   <i className={`${item.iClass} nav__icon`}></i>
-                  {item.name === "Services" ? "Experience" : item.name}
+                  {item.name}
                 </a>
               </li>
             ))}

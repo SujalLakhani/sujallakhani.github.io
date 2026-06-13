@@ -1,18 +1,6 @@
 import React, { useState, useEffect } from "react";
-import SocialItems from "../components/SocialItems";
 import { SocialData } from "../components/Data";
 import aboutImg from "../assets/img/about.webp";
-
-const newSocialItems = (props) => {
-  return (
-    <SocialItems
-      key={props.id}
-      link={props.link}
-      class={props.class}
-      aclass="home__social-icon"
-    />
-  );
-};
 
 const Typewriter = () => {
   const [text, setText] = useState("");
@@ -74,9 +62,18 @@ const Home = () => {
       <div className="home__container container grid">
         <div className="home__content grid">
           
-          {/* Social Links on Left Column */}
           <div data-reveal className="home__social delay-100">
-            {SocialData.map(newSocialItems)}
+            {SocialData.map((social) => (
+              <a
+                key={social.id}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="home__social-icon"
+              >
+                <i className={social.class}></i>
+              </a>
+            ))}
           </div>
 
           {/* Profile Picture on Right Column (On Desktop) */}

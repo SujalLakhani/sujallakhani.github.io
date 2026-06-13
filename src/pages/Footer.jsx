@@ -1,24 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { LinkData, SocialData } from "../components/Data";
-import LinksItems from "../components/LinksItems";
-import SocialItems from "../components/SocialItems";
-
-const newSocialItems = (props) => {
-  return (
-    <SocialItems
-      key={props.id}
-      link={props.link}
-      class={props.class}
-      aclass="footer__social"
-    />
-  );
-};
-
-const newLinkItems = (props) => {
-  return (
-    <LinksItems key={props.liid} lihref={props.lihref} lidata={props.lidata} />
-  );
-};
+import { ListData, SocialData } from "../components/Data";
 
 const Footer = () => {
   let [selected, setSelected] = useState(false);
@@ -40,14 +21,31 @@ const Footer = () => {
               <h1 className="footer__title">Sujal Lakhani</h1>
               <span className="footer__subtitle">Full Stack Developer</span>
             </div>
-            <ul className="footer__links">{LinkData.map(newLinkItems)}</ul>
+            <ul className="footer__links">
+              {ListData.map((link) => (
+                <li key={link.id}>
+                  <a href={link.liHref} className="footer__link">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
             <div className="footer__socials">
-              {SocialData.map(newSocialItems)}
+              {SocialData.map((social) => (
+                <a
+                  key={social.id}
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer__social"
+                >
+                  <i className={social.class}></i>
+                </a>
+              ))}
             </div>
           </div>
           <p className="footer__copy">
-            <span dangerouslySetInnerHTML={{ __html: "&copy;" }} />{" "}
-            sujallakhani. All right reserved.
+            &copy; sujallakhani. All rights reserved.
           </p>
         </div>
       </footer>
