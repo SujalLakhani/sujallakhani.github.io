@@ -99,7 +99,7 @@ const Home = () => {
               <Typewriter />
             </h3>
             <p className="home__description">
-              AI-driven developer with 2+ years of experience building and optimizing high-performance web applications using Angular, React.js, Node.js, and TypeScript.
+              AI-driven developer with 3+ years of experience building and optimizing high-performance web applications using Angular, React.js, Node.js, and TypeScript.
             </p>
             <a href="mailto:sujallakhani98@gmail.com" className="button button--flex">
               Contact Me <i className="uil uil-message button__icon"></i>
