@@ -1,6 +1,6 @@
 import React from "react";
-import aboutMeMonoImg from "../assets/img/about_me_mono.png";
-import aboutMeDarkImg from "../assets/img/about_me_dark.png";
+import aboutMeMonoImg from "../assets/img/about_me_mono.webp";
+import aboutMeDarkImg from "../assets/img/about_me_dark.webp";
 import resumePdf from "../assets/pdf/Resume of Sujal Lakhani.pdf";
 
 const About = () => {
@@ -17,11 +17,13 @@ const About = () => {
               src={aboutMeMonoImg}
               alt="Sujal Lakhani"
               className="about__img about__img--light"
+              loading="lazy"
             />
             <img
               src={aboutMeDarkImg}
               alt="Sujal Lakhani"
               className="about__img about__img--dark"
+              loading="lazy"
             />
           </div>
         </div>

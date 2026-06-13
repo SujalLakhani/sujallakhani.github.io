@@ -179,7 +179,7 @@ const DomainData = [
         name: "CSS",
         num: "80"
       },
-      
+
     ],
   },
   {
@@ -249,14 +249,43 @@ const DomainData = [
 
 const ServicesData = [
   {
-    id: 4,
-    name: "Rapidops Inc.",
+    id: 3,
+    name: "Aerolens India Pvt. Ltd.",
     position: "Software Engineer",
-    duration: "08/2025 - Present",
+    duration: "01/2026 - Present",
     data: [
       {
         id: 1,
-        line: "Developing and optimizing Salesmate CRM features including Dashboard Filters, Reports, Goal Management, Real-time Chat, and Document/Email Template Builder, improving usability and performance. ",
+        line: "Developing and enhancing features for a Global FinTech platform, delivering scalable and user-centric solutions."
+      },
+      {
+        id: 2,
+        line: "Leveraging Agentic AI to develop intelligent product features and streamline user workflows."
+      },
+      {
+        id: 3,
+        line: "Building and integrating Micro-Frontend modules to improve application scalability and maintainability."
+      },
+      {
+        id: 4,
+        line: "Designing and consuming GraphQL APIs for efficient data exchange and seamless frontend-backend communication."
+      },
+      {
+        id: 5,
+        line: "Working with React.js, Redux, Node.js, GraphQL, and MySQL in an Agile/Scrum development environment."
+      }
+    ]
+  }
+  ,
+  {
+    id: 2,
+    name: "Rapidops Inc.",
+    position: "Software Engineer",
+    duration: "02/2023 - 12/2025",
+    data: [
+      {
+        id: 1,
+        line: "Developing and optimizing CRM features including Dashboard Filters, Reports, Goal Management, Real-time Chat, and Document/Email Template Builder, improving usability and performance. ",
       },
       {
         id: 2,
@@ -268,48 +297,12 @@ const ServicesData = [
       },
       {
         id: 4,
-        line: "Collaborated in an Agile/Scrum environment , improving delivery efficiency."
+        line: "Acquired comprehensive knowledge spanning Angular 2+, React.js, Node.js, Express.js, MongoDB, TypeScript, JavaScript, SQL, Git/GitHub, and Ubuntu, applying them to develop and innovate CRM functionalities.",
+      },
+      {
+        id: 5,
+        line: "Collaborated in an Agile/Scrum environment, improving delivery efficiency."
       }
-    ],
-  },
-  {
-    id: 3,
-    name: "Rapidops Inc.",
-    position: "Jr. Software Engineer",
-    duration: "08/2023 - 08-2025",
-    data: [
-      {
-        id: 1,
-        line: "Currently I am working as a Jr. Software Developer, my current focus lies within the Salesmate CRM, an ongoing project operated by Rapidops Inc.",
-      },
-      {
-        id: 2,
-        line: "As a Jr. Software Developer, my primary responsibility involves the identification and resolution of existing bugs within the Salesmate CRM. This role emphasizes ensuring the platform's smooth and efficient operation.",
-      },
-      {
-        id: 3,
-        line: "Furthermore, I actively contribute to the enhancement of Salesmate CRM by developing new components or features. This aspect of my work aims to continually improve and innovate the functionalities offered within the platform.",
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Rapidops Inc.",
-    position: "Software Engineer Intern",
-    duration: "02/2023 - 08/2023",
-    data: [
-      {
-        id: 1,
-        line: "Throughout this internship, I acquired comprehensive knowledge spanning various technologies such as Angular 2+, React.js, Node.js, Express.js, MongoDB, RDBMS, SQL, TypeScript, JavaScript, Git/GitHub, HTML, CSS, Ubuntu, and several others. This learning process provided me with a broad understanding of diverse tech tools and frameworks.",
-      },
-      {
-        id: 2,
-        line: "Applying the acquired knowledge, I successfully utilized these technologies in the creation of several small-scale projects. This practical application allowed me to gain hands-on experience and deepen my understanding of their functionalities.",
-      },
-      {
-        id: 3,
-        line: "As a Software Engineer Intern, I actively contributed to the Salesmate CRM, a live project managed by Rapidops Inc. This involvement included developing essential components and effectively resolving existing bugs, thereby directly impacting the project's advancement and functionality.",
-      },
     ],
   },
   {

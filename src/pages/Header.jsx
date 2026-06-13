@@ -18,33 +18,59 @@ const Header = () => {
   };
 
   useEffect(() => {
+    // 1. Sticky header style with requestAnimationFrame throttling
+    let ticking = false;
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      
-      // Header sticky visual style
-      scrollY > 80 ? setScrollHead(true) : setScrollHead(false);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrollHead(window.scrollY > 80);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
 
-      // Scroll active link mapping
-      const sections = document.querySelectorAll("section[id]");
-      sections.forEach((current) => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 65; // header padding offset
-        const sectionId = current.getAttribute("id");
-        const link = document.querySelector(`.nav__menu a[href*="${sectionId}"]`);
+    // 2. Active section highlight using IntersectionObserver
+    const sections = document.querySelectorAll("section[id]");
+    const observerOptions = {
+      root: null, // viewport
+      rootMargin: "-25% 0px -55% 0px", // focus on middle area of viewport
+      threshold: 0,
+    };
 
-        if (link) {
-          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            link.classList.add("active-link");
-          } else {
-            link.classList.remove("active-link");
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.getAttribute("id");
+          
+          // Query active link in header menu
+          const activeLink = document.querySelector(`.nav__menu a[href*="${sectionId}"]`);
+          
+          if (activeLink) {
+            // Remove active class from all nav links
+            document.querySelectorAll(".nav__link").forEach((link) => {
+              link.classList.remove("active-link");
+            });
+            
+            // Add active class to the current active link
+            activeLink.classList.add("active-link");
           }
         }
       });
     };
 
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach((section) => observer.observe(section));
+
     window.addEventListener("scroll", handleScroll);
+    
+    // Initial check
+    handleScroll();
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      sections.forEach((section) => observer.unobserve(section));
+      observer.disconnect();
     };
   }, []);
 

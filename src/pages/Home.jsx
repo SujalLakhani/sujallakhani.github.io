@@ -14,7 +14,7 @@ const newSocialItems = (props) => {
   );
 };
 
-const Home = () => {
+const Typewriter = () => {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
@@ -61,6 +61,15 @@ const Home = () => {
   };
 
   return (
+    <>
+      <span>{text}</span>
+      <span className="typewriter-cursor"></span>
+    </>
+  );
+};
+
+const Home = () => {
+  return (
     <section className="home section dotted-bg" id="home">
       <div className="home__container container grid">
         <div className="home__content grid">
@@ -76,6 +85,8 @@ const Home = () => {
               src={aboutImg}
               alt="Sujal Lakhani Profile"
               className="home__blob"
+              loading="eager"
+              fetchpriority="high"
             />
           </div>
 
@@ -85,8 +96,7 @@ const Home = () => {
               Hi, I'm <span style={{ color: "var(--accent-color)" }}>Sujal Lakhani</span>
             </h1>
             <h3 className="home__subtitle" style={{ minHeight: "2.2rem" }}>
-              <span>{text}</span>
-              <span className="typewriter-cursor"></span>
+              <Typewriter />
             </h3>
             <p className="home__description">
               AI-driven developer with 2+ years of experience building and optimizing high-performance web applications using Angular, React.js, Node.js, and TypeScript.

@@ -24,7 +24,7 @@ const Footer = () => {
   let [selected, setSelected] = useState(false);
   useEffect(() => {
     const handleScrollVisibility = () => {
-      window.pageYOffset > 300 ? setSelected(true) : setSelected(false);
+      window.scrollY > 300 ? setSelected(true) : setSelected(false);
     };
     window.addEventListener("scroll", handleScrollVisibility);
     return () => {
